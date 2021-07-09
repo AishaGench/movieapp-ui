@@ -1,6 +1,6 @@
 const initialState = {}
 
-export default (state = initialState, { type, payload }) => {
+export default (state =[1,2,3], { type, payload }) => {
     switch (type) {
 /*
     case typeName:
