@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import moviesReducer from '../../reducers/moviesReducer'
 import PropTypes from 'prop-types'
+import MovieList from '../MovieList'
 
 export class MoviesPage extends Component {
     static propTypes = {movies:PropTypes.array.isRequired}
@@ -11,6 +12,8 @@ export class MoviesPage extends Component {
         return (
             <div>
                Movies Page Component 
+               <br/>
+               <MovieList/>
             </div>
         )
     }

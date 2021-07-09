@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 export const MovieList = (props) => {
     return (
         <div>
-            
+            Movie List Page
         </div>
     )
 }
