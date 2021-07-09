@@ -1,5 +1,6 @@
 import './App.css';
-import {Link} from 'react-router-dom'
+import {Link, Route} from 'react-router-dom'
+import MoviesPage from './components/pages/MoviesPage';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       App Component
       <br/>
       <Link to="movies">Movies</Link>
+      <Route path='/movies' component={MoviesPage}></Route>
     </div>
   );
 }
