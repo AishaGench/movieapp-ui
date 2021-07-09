@@ -2,9 +2,11 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 export const MovieList = (props) => {
+    const movieList =<div>Movies List is ready and here...</div>
+    const emptyMessage =<div>Thefe is no any movies yet...</div>
     return (
         <div>
-            Movie List Page
+        {props.movies.lenght === 0 ? emptyMessage : movieList}
         </div>
     )
 }

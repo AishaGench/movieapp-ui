@@ -1,6 +1,7 @@
 //Created with rcredux
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+// eslint-disable-next-line no-unused-vars
 import moviesReducer from '../../reducers/moviesReducer'
 import PropTypes from 'prop-types'
 import MovieList from '../MovieList'
@@ -13,7 +14,7 @@ export class MoviesPage extends Component {
             <div>
                Movies Page Component 
                <br/>
-               <MovieList/>
+               <MovieList movies={this.props.movies}/>
             </div>
         )
     }
