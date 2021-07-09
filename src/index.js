@@ -5,8 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createStore} from 'redux'
 import rootReducer from './reducers/rootReducer'
+import thunk from 'redux-thunk';
 
-const myStore = createStore(rootReducer)
+const myStore = createStore(rootReducer, thunk)
 ReactDOM.render(
   <React.StrictMode>
     <App />
