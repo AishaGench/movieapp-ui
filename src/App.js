@@ -2,6 +2,8 @@ import './App.css';
 import {Link, Route} from 'react-router-dom'
 import MoviesPage from './components/pages/MoviesPage';
 import React, { Component } from 'react'
+import 'semantic-ui-css/semantic.min.css'
+
 import {
   Container,Divider,Dropdown,Grid,Header,Icon,Image,List,Menu,Segment,Visibility,
 } from 'semantic-ui-react'
